@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/MainTitle"
+            android:text="Akıllı Ev Kontrol Uygulaması"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/asdqwe"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/asdqwe"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/b1"
+                android:layout_centerHorizontal="true"
+                android:text="  Yükleme Yap  "
+                android:background="@drawable/buttons">
+            </Button>
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buttons"
+                android:text="  Mesajlar  "
+                android:layout_marginTop="5dp">
+            </Button>
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/buttons"
+                android:text="  Cihazlar  "
+                android:layout_marginTop="5dp">
+            </Button>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

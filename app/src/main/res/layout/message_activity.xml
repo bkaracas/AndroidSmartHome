@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/message_rellay2"
+    android:clickable="true"
+    android:background="@drawable/message_walpaper">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="30"
+    android:layout_above="@+id/message_linlay"
+    android:background="@color/beige">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/c2">
+
+        <TextView
+            android:id="@+id/text_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            >
+            <EditText
+                android:id="@+id/gondertext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="Değer Giriniz"
+                android:inputType="numberDecimal"
+                android:textSize="10dp"
+                />
+
+            <Button
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/gonderbutton"
+                android:layout_toRightOf="@id/gondertext"
+                android:layout_centerInParent="true"
+                android:text="Gönder"
+                android:layout_marginEnd="5dp"
+                android:textSize="10dp"
+                ></Button>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/message_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:background="@drawable/message_walpaper">
+        </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/message_linlay"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c2"
+        android:orientation="horizontal"
+        android:weightSum="20">
+
+        <EditText
+            android:id="@+id/send_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="17"
+            android:padding="6dp"
+            android:background="@drawable/message_send_textview"
+            android:hint="Bir Mesaj Yaz"
+            android:textAlignment="textStart">
+        </EditText>
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/send_text"
+            android:layout_weight="3"
+            android:background="@drawable/buttons2"
+            android:text="Gönder"
+            android:textSize="10dp">
+        </Button>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttons"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rellay3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttons"
+            android:text="Yükle"
+
+            >
+
+        </Button>
+
+        <RelativeLayout
+            android:id="@+id/rellay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="50dp">
+
+
+            <EditText
+                android:id="@+id/cardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:digits="ğıĞİabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:ems="12"
+                android:hint="Kart Sahibinin Adı Soyadı">
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/cardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardName"
+                android:layout_marginLeft="15dp"
+                android:ems="12"
+                android:hint="Kart Numarası        "
+                android:inputType="numberDecimal"
+                android:maxLength="16">
+            </EditText>
+
+            <EditText
+                android:id="@+id/cardNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardNumber"
+                android:layout_marginLeft="15dp"
+                android:ems="4"
+                android:hint="CSV"
+                android:inputType="numberDecimal"
+                android:maxLength="3">
+            </EditText>
+
+            <GridLayout
+                android:id="@+id/grid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardNumber2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textAy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="Ay">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/textYıl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Yıl" >
+                </TextView>
+
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/grid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/grid1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp" >
+                </Spinner>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/payText1"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/color3"
+            android:max="1000"
+            android:progress="300"
+            android:progressBackgroundTint="@color/color10" >
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/payText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:hint="93 tl"
+            android:textSize="14dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/payText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/payText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:hint="300 KW"
+            android:textSize="14dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/payText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Tutar Seçiniz..."
+            android:textSize="20dp">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
